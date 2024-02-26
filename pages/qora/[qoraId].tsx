@@ -29,6 +29,7 @@ export default Qora;
 export const getServerSideProps = async (
   ctx: GetServerSidePropsContext<any, PreviewData>
 ) =>
+
   await withPageAuthRequired({
     returnTo: '/qora/' + ctx.query.qoraId,
   })(ctx);
